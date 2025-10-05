@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Finder</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🍲 Recipe Finder</h1>
+  </header>
+
+  <div class="search-area">
+    <input type="text" id="search-input" placeholder="Search for any recipe">
+    <button id="search-btn">Search</button>
+    <button id="view-favourites-btn">❤️ View Favourites</button>
+  </div>
+
+  <main>
+    <div id="recipes" class="recipes"></div>
+  </main>
+
+  <div id="recipe-popup" class="popup hidden">
+    <div class="popup-box">
+      <span id="close-btn">&times;</span>
+      <h2 id="recipe-title"></h2>
+      <img id="recipe-img" alt="Recipe Image">
+      <h3>Ingredients:</h3>
+      <ul id="ingredient-list"></ul>
+      <h3>Instructions:</h3>
+      <p id="recipe-instructions"></p>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
